@@ -18,10 +18,17 @@ class Point {
   void printInfo() => print('($x, $y)');
   static void printZValue() => print('$factor');*/
 
-  // Dart 支持初始化列表
-  num x, y, z;
 
-  Point(this.x, this.y) : z = 0; // 初始化变量 z
-  Point.bottom(num x) : this(x, 0); // 重定向构造函数
+  /**
+   * Point 类中有两个构造函数 Point.bottom 与 Point，
+   * 其中：Point.bottom 将其成员变量的初始化重定向到了 Point 中，而 Point 则在初始化列表中为 z 赋上了默认值 0。
+   *
+   * Dart 支持初始化列表
+   */
+  num x, y, z;
+  // 初始化变量 z
+  Point(this.x, this.y) : z = 0;
+  // 重定向构造函数
+  Point.bottom(num x) : this(x, 0);
   void printInfo() => print('($x,$y,$z)');
 }

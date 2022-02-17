@@ -1,7 +1,9 @@
-import 'package:flutter_practice/Apple.dart';
-import 'package:flutter_practice/Banana.dart';
-import 'package:flutter_practice/Fruit.dart';
-import 'package:flutter_practice/Point.dart';
+import 'package:flutter_practice/dart/Apple.dart';
+import 'package:flutter_practice/dart/Banana.dart';
+import 'package:flutter_practice/dart/Fruit.dart';
+import 'package:flutter_practice/dart/Point.dart';
+
+import 'Vector.dart';
 
 main() {
   var number = 2022;
@@ -22,6 +24,8 @@ main() {
   c();
   d();
   e();
+  f();
+  g();
 }
 
 void printString(String str) {
@@ -211,4 +215,12 @@ void e() {
  */
 void f(){
 
+}
+
+void g(){
+  final x = Vector(3, 3);
+  final y = Vector(2, 2);
+  final z = Vector(1, 1);
+  //  输出true
+  print(x == (y + z));
 }

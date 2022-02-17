@@ -1,4 +1,4 @@
-import 'package:flutter_practice/Fruit.dart';
+import 'Fruit.dart';
 
 class Apple extends Fruit {
   num z = 3;
